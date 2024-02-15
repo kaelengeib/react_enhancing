@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a2e; /* Dark background for the space theme */
+  color: #e0e0e0; /* Light text color for contrast */
+  font-family: 'Orbitron', sans-serif; /* Futuristic font, ensure you link this font in your HTML or import it in CSS */
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.display {
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px; /* Adjusted for responsiveness */
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  text-align: right;
+  font-size: 1.5em;
+  background-color: #0f3460;
+  color: #e0e0e0;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  padding: 0;
+  width: 90%;
+  max-width: 400px; /* Adjusted for responsiveness */
+  margin: auto;
+}
+
+.keypad button {
+  padding: 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #16213e;
+  color: #e0e0e0;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.keypad button:hover {
+  background-color: #0f3460;
+  transform: scale(1.1); /* Button pops a bit */
+}
+
+.keypad button:active {
+  background-color: #4ecca3; /* A bit of color when button is pressed */
+}
+
+/* Existing styles... */
+
+.App {
+  display: flex;
+  flex-direction: column; /* Elements will be stacked vertically */
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start of the container */
+  height: 100vh;
+  text-align: center;
+  padding-top: 20px; /* Add some space at the top */
+}
+
+.App h1 {
+  margin: 0;
+  padding-bottom: 20px; /* Space below the title */
+}
+
+.display {
+  order: 2; /* Display comes second */
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  text-align: right;
+  font-size: 1.5em;
+  background-color: #0f3460;
+  color: #e0e0e0;
+}
+
+.keypad {
+  order: 3; /* Keypad comes last */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+/* Rest of your styles... */
