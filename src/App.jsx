@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Display from './Display'; // Adjust the path as necessary
-import Keypad from './Keypad'; // Adjust the path as necessary
+import Display from './Display'; 
+import Keypad from './Keypad'; 
 
 function App() {
   const [input, setInput] = useState('');
@@ -19,7 +19,7 @@ function App() {
 
   function calculate() {
     try {
-      // Replace the safe eval() alternative with your own calculation logic here
+      
       const result = eval(input);
       setInput(String(result));
     } catch {

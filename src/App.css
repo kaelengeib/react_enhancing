@@ -10,7 +10,7 @@ body, html {
   height: 100%;
   background-color: #1a1a2e; /* Dark background for the space theme */
   color: #e0e0e0; /* Light text color for contrast */
-  font-family: 'Orbitron', sans-serif; /* Futuristic font, ensure you link this font in your HTML or import it in CSS */
+  font-family: 'Orbitron', sans-serif; /* Futuristic font */
 }
 
 .App {
@@ -106,4 +106,4 @@ body, html {
   margin: 20px auto;
 }
 
-/* Rest of your styles... */
+
